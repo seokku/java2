@@ -1,0 +1,9 @@
+127.0.0.1 - - [16/Feb/2021:16:09:56 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:09:59 +0900] "GET /jspProject/board/list.jsp HTTP/1.1" 200 2813
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:09:59 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:17:02:57 +0900] "GET /jspProject/board/view.jsp?no=5&inc=1 HTTP/1.1" 200 1436
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:17:02:58 +0900] "GET /jspProject/board/list.jsp HTTP/1.1" 200 2813
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:17:02:58 +0900] "GET /jspProject/board/view.jsp?no=4&inc=1 HTTP/1.1" 200 1430
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:17:02:59 +0900] "GET /jspProject/board/list.jsp HTTP/1.1" 200 2813
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:17:02:59 +0900] "GET /jspProject/board/view.jsp?no=2&inc=1 HTTP/1.1" 200 1435
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:17:03:00 +0900] "GET /jspProject/board/list.jsp HTTP/1.1" 200 2813

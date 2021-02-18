@@ -1,0 +1,7 @@
+package com.webjjang.main.controller;
+
+// 인터페이스 - 추상 메서드를 가지고 있다.
+
+public interface Service {
+
+}

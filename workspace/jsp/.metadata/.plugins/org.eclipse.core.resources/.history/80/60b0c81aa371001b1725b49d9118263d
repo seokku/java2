@@ -1,0 +1,35 @@
+package com.webjjang.util.db;
+
+public class DbInfo {
+	
+	
+	// 드라이버 정보
+	private static final String DRIVER 
+	= "oracle.driver.OracleDriver";
+	private static boolean driverCheck = false;
+	
+	// 접속 정보
+	private static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
+	private static final String ID = "java00";
+	private static final String PW = "java00";
+
+	// 만약에 클래스를 찾으면 바로 실행되어야 하는 것 - 드라이버 확인 : 정보
+	static {
+		System.out.println("DBInfo.static{} -----------------------------");
+		// 여기서 드라이버 확인을 한번만 하도록 한다.
+		try {
+			Class.forName(DRIVER);
+			driverCheck = true;
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	// Connection 받기 메서드 -> 정보
+	
+	// Close 메서드
+	
+	
+	
+	
+}

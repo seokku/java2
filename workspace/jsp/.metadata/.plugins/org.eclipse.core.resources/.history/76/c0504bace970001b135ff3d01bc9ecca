@@ -1,0 +1,13 @@
+package com.webjjang.board.dao;
+
+public class BoardDAO {
+	
+	// 1. list
+	// 2. view
+	// 3. write
+	// 4. update
+	// 5. delete
+	
+	
+
+}

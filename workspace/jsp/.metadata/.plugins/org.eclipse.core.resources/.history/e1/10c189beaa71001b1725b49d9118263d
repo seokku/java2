@@ -1,0 +1,22 @@
+package com.webjjang.board.dao;
+/*
+ * 필요한 메서드들
+ * list() getTotalRow() view() increase() write() update() delete()
+ * 
+ * 
+ * 
+ * */
+
+import java.util.List;
+
+import com.webjjang.board.vo.BoardVO;
+
+public class BoardDAO {
+	
+	// 1. 게시판 리스트
+	public List<BoardVO> list() throws Exception {
+		return null;
+	}
+	
+
+}

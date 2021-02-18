@@ -1,0 +1,11 @@
+package com.webjjang.main.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Beans {
+	
+	// 객체를 저장하는 변수 선언, 생성 후 저장해 놓는다.
+	private static Map<String, Service> serviceMap = new HashMap<>();
+
+}

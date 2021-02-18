@@ -1,0 +1,8 @@
+package com.webjjang.main.controller;
+
+public interface Service {
+	
+	public Object service(Object obj) throws Exception;
+	
+
+}

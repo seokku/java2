@@ -1,0 +1,18 @@
+package com.webjjang.test.dao;
+
+import com.webjjang.board.dao.BoardDAO;
+
+public class BoardDAOTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// BoardDAO 객체 생성
+		BoardDAO dao = new BoardDAO();
+		
+		
+		
+
+	}
+
+}

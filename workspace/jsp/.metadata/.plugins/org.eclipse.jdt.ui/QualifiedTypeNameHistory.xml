@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.webjjang.main.controller.Service"/>
+<fullyQualifiedTypeName name="com.webjjang.board.service.BoardListService"/>
+<fullyQualifiedTypeName name="com.webjjang.board.service.BoardDeleteService"/>
+<fullyQualifiedTypeName name="com.webjjang.board.service.BoardUpdateService"/>
+<fullyQualifiedTypeName name="com.webjjang.board.service.BoardWriteService"/>
+<fullyQualifiedTypeName name="com.webjjang.board.service.BoardViewService"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.webjjang.board.dao.BoardDAO"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post">
+	이메일 <input type="email"><br/>
+	<button>전송</button>
+</form>
+</body>
+</html>

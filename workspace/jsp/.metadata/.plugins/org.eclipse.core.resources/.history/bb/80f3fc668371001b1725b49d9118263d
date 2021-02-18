@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapExample1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// 학생이름(키) - 점수(값)
+		// key - value : Map
+		// 생성은 클래스로 하고 있다. 타입은 인터페이스로 하고 있다. -> 모든 작업은 다 메서드를 이용
+		Map<String, Integer> map = new HashMap<>();
+		
+		// 데이터 저장 - 동명이인이 있는 경우는 값이 덮어 쓰기가 된다. 키는 중복을 허용하지 않는다.
+		
+
+	}
+
+}

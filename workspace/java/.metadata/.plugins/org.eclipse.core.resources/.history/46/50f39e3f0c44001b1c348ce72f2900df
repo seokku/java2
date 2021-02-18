@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class ToMainDataTrance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(Arrays.ToString(args));
+		
+	}
+
+}

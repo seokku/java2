@@ -1,0 +1,10 @@
+package com.webjjang.main.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Beans {
+	
+	private static Map<String, Service> serviceMap = new HashMap<>();
+
+}

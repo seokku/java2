@@ -1,0 +1,42 @@
+package com.webjjang.main.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.webjjang.board.service.BoardDeleteService;
+import com.webjjang.board.service.BoardListService;
+import com.webjjang.board.service.BoardUpdateService;
+import com.webjjang.board.service.BoardViewService;
+import com.webjjang.board.service.BoardWriteService;
+
+public class MainController {
+	
+	// map : key - value 저장하는 저장객체. key를 가지고 주소를 정하게 된다.
+	// 빠른 데이터 검색이 가능. 메모리가 많이 소요된다.
+	private static Map<String, Service> serviceMap = new HashMap<>();
+	
+	static {
+		System.out.println("MainController.static{}");
+		init();
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("MainController.main() 시작");
+	}
+	
+	// main() 실행하기 전에 딱 한번만 실행이 되는 메서드
+	public static void init() {
+		System.out.println("MainController.init() 시작");
+		// map에 데이터 저장하기 -> put(key, value) -> key : 설계
+		// map에 데이터 꺼내오기 -> get(key) -> key : 사용자 입력
+		// 설계한대로 객체를 생성해서 저장해 둔다.
+		serviceMap.put("/board/list.jsp", new BoardListService());
+		serviceMap.put("/board/view.jsp", new BoardViewService());
+		serviceMap.put("/board/write.jsp", new BoardWriteService());
+		serviceMap.put("/board/update.jsp", new BoardUpdateService());
+		serviceMap.put("/board/delete.jsp", new BoardDeleteService());
+	}
+	
+}

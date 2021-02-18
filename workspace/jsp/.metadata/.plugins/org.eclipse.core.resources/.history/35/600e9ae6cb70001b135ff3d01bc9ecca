@@ -1,0 +1,33 @@
+package com.webjjang.main.controller;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class Init
+ */
+@WebServlet("/Init")
+public class Init extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     * 생성자 - 기본 생성자
+     */
+    public Init() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see Servlet#init(ServletConfig)
+	 * 서버가 실행하면서 호출되는 메서드
+	 */
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		System.out.println("Init.init() - 초기화 : 객체 생성");
+	}
+
+}

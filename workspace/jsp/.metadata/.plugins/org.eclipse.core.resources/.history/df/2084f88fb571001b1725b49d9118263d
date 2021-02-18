@@ -1,0 +1,11 @@
+package com.webjjang.main.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Beans {
+	
+	// service 저장 객체
+	Map<String, Service> serviceMap = new HashMap<String, Service>();
+
+}

@@ -1,0 +1,16 @@
+package com.webjjang.main.controller;
+
+public class Exe {
+	
+	// execute(실행할 service, 넘겨줄데이터)
+	public static Object execute(Service service, Object obj) throws Exception {
+		// 실행되는 객체 정보 출력 -Service
+		
+		
+		
+	}
+	
+	
+	
+
+}

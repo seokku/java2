@@ -1,0 +1,18 @@
+package com.webjjang.board.dao;
+
+import java.util.List;
+
+import com.webjjang.board.vo.BoardVO;
+
+public class BoardDAO {
+	
+	// 1. list
+	public List<BoardVO> list() throws Exception{ return null; }
+	// 2. view
+	// 3. write
+	// 4. update
+	// 5. delete
+	
+	
+
+}

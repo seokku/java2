@@ -1,0 +1,26 @@
+package com.webjjang.main.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MainController {
+	
+	// map - key - value 저장하는 저장객체
+	Map<String, Service> serviceMap = new HashMap<>();
+	
+	static {
+		System.out.println("MainController.static{}");
+		init();
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("MainController.main() 시작");
+	}
+	
+	public static void init() {
+		System.out.println("MainController.init() 시작");
+	}
+	
+}

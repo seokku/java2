@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+header, nav, section, article, aside, footer{
+/* 	div를 구분해서 의미 있는 공간을 만들어서 사용하기 */
+	border: 1px double #888;
+}
+</style>
+</head>
+<body>
+<header>여기가 해더 부분입니다. 이미지나 로고가 나타냅니다.</header>
+<nav>
+	<a href="../board/list.jsp">게시판</a>
+</nav>
+</body>
+</html>

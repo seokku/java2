@@ -1,0 +1,25 @@
+<%@page import="java.util.concurrent.ExecutorService"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+// 여기가 자바 코드 입니다. jsp-Service-DAO
+String url = request.getServletPath();
+List<BoardVO> list = ExecutorService.execute(Beans.get(url), null);
+
+
+
+
+%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판 리스트</title>
+</head>
+<body>
+<h1>게시판 리스트</h1>
+</body>
+</html>

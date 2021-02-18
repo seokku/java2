@@ -1,0 +1,12 @@
+package com.webjjang.util.db;
+
+public class DbInfo {
+
+	// 만약에 클래스를 찾으면 바로 실행되어야 하는 것 - 드라이버 확인
+	
+	// Connection 받기 메서드
+	
+	
+	
+	
+}

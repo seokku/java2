@@ -1,0 +1,13 @@
+import java.util.Arrays;
+
+public class ToMainDataTrance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//전달되는 args의 값을 출력
+		System.out.println(Arrays.deepToString(args));
+		
+	}
+
+}

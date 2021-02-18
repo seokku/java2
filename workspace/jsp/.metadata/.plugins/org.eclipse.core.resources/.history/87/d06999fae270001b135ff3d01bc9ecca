@@ -1,0 +1,28 @@
+<%@page import="com.webjjang.main.controller.ExeService"%>
+<%@page import="com.webjjang.main.controller.Beans"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%
+// ----------- 데이터 처리 
+// 요청한  url 가져오기
+// String url = request.getRequestURL().toString();
+String url2 = request.getServletPath();
+
+List list = (List) ExeService.execute(Beans.get(url), null);
+
+%>    
+
+<!-- 데이터 표시     -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판 리스트</title>
+</head>
+<body>
+<h1>게시판 리스트</h1>
+<%-- 요청 url(request.getRequestURL) : <%= url %><br/> --%>
+요청 url2(request.getServletPath) : <%= url2 %><br/>
+</body>
+</html>

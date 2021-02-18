@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.webjjang.main.controller.Exe&apos; to &apos;ExeService&apos;&#x0D;&#x0A;- Original project: &apos;jspProject2&apos;&#x0D;&#x0A;- Original element: &apos;com.webjjang.main.controller.Exe&apos;&#x0D;&#x0A;- Renamed element: &apos;com.webjjang.main.controller.ExeService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Exe&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.webjjang.main.controller{Exe.java[Exe" matchStrategy="1" name="ExeService" qualified="false" references="true" similarDeclarations="false" stamp="1613636797294" textual="false" version="1.0"/>
+</session>

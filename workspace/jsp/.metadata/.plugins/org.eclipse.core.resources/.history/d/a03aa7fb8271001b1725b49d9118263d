@@ -1,0 +1,15 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapExample1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// 학생이름(키) - 점수(값)
+		// key - value
+		Map<String, Integer> map = new HashMap<>(); 
+
+	}
+
+}
