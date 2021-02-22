@@ -12,7 +12,7 @@ public class ExeService {
 		// 실행한다. 결과를 받는다.
 		Object result = service.service(obj);
 		// 결과 출력 확인
-		System.out.println("실행한 결과 : + result");
+		System.out.println("실행한 결과 :" + result);
 		// 결과를 넘겨준다.
 		return result;
 		 

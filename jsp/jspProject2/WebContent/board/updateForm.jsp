@@ -1,27 +1,28 @@
+<%@page import="com.webjjang.board.vo.BoardVO"%>
+<%@page import="com.webjjang.main.controller.ExeService"%>
+<%@page import="com.webjjang.main.controller.Beans"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<!-- dd
- 
-// 여기가 자바 코드 입니다. jsp-Service-DAO -> /board/view.jsp
-String url = request.getServletPath();
-
-// 넘어오는 데이터 받기 - 글번호
+<% 
+// 자바 부분입니다.
+// 1. 넘어오는 데이터 받기 - 글번호
 String strNo = request.getParameter("no");
 long no = Long.parseLong(strNo);
-
-
-BoardVO vo = (BoardVO) ExeService.execute(Beans.get(url), no);
-// 서버객체 request에 담는다.
+// 조회수 1증가하는 부분은 inc=0으로 강제 셋팅해서 넘긴다.
+// 2. 글번호에 맞는 데이터 가져오기 -> BoardViewService => /board/view.jsp 
+String url = "/board/view.jsp"; // 현재 URL과 다르므로 강제 셋팅했다.
+BoardVO vo = (BoardVO) ExeService.execute(Beans.get(url), new Long[]{no, 0L});
+//3. 서버 객체에 넣기
 request.setAttribute("vo", vo);
--->
+%>
 
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시판 글쓰기</title>
+<title>게시판 글수정</title>
 
   <!-- 부트스트랩 라이브러리 등록 - CDN 방식 -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -75,8 +76,6 @@ $(function(){ // jquery에서 익명함수를 전달해서 저장해놨다가 Do
 		// 작성자 2자 이상
 		if(!checkLength($("#writer"), "작성자", 2)) return false;
 		
-		
-		
 		// submit 이벤트 취소
 		// return false; 
 	});
@@ -87,13 +86,20 @@ $(function(){ // jquery에서 익명함수를 전달해서 저장해놨다가 Do
 </head>
 <body>
 <div class="container">
-<h1>게시판 글쓰기</h1>
-		<form action="write.jsp" method="post" id="writeForm">
+<h1>게시판 글수정</h1>
+		<form action="update.jsp" method="post" id="updateForm">
+		<div class="form-group"> 
+			<!-- 번호 -->
+			<label for="no">번호</label>
+			<!-- input tag의 기본 type을 text입니다. 그래서 생략 가능하다. -->
+			<input name="no" class="form-control" id="no" readonly="readonly" value="${vo.no}">
+		</div>
+		
 		<div class="form-group"> 
 			<!-- 제목 -->
 			<label for="title">제목</label>
 			<!-- input tag의 기본 type을 text입니다. 그래서 생략 가능하다. -->
-			<input name="title" class="form-control" id="title" required="required"
+			<input name="title" class="form-control" id="title" required="required" value="${vo.title}"
 			 placeholder="제목은 4자이상 입력하셔야 합니다.">
 		</div>
 		
@@ -101,18 +107,18 @@ $(function(){ // jquery에서 익명함수를 전달해서 저장해놨다가 Do
 			<!-- 내용 -->
 			<label for="content">내용</label>
 			<textarea rows="5" name="content" class="form-control" id="content" required="required"
-			  placeholder="내용은 4자이상 입력하셔야 합니다."></textarea>
+			  placeholder="내용은 4자이상 입력하셔야 합니다.">${vo.content}</textarea>
 		</div>
 		
 		<div class="form-group">
 			<!-- 작성자 -->
 			<label for="writer" >작성자</label>
 			<!-- input tag의 기본 type을 text입니다. 그래서 생략 가능하다. -->
-			<input name="writer" class="form-control" id="writer" required="required"
+			<input name="writer" class="form-control" id="writer" required="required" value="${vo.writer}"
 			placeholder="작성자는 2자이상 입력하셔야 합니다.">
 		</div>
 		
-		<button class="btn btn-default">등록</button>
+		<button class="btn btn-default">수정</button>
 		<!-- 데이터를 새로 입력하는 type = "reset" 버튼 -->
 		<button type="reset" class="btn btn-default">새로입력</button>
 		<!-- 취소하려면 버튼모양으로 사용(type="button")하고 취소의 동작을 JS로 작성한다.

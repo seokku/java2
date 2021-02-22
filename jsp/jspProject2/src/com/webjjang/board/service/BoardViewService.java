@@ -17,7 +17,15 @@ public class BoardViewService implements Service{
 	@Override
 	public Object service(Object obj) throws Exception {
 		// TODO Auto-generated method stub
-		return dao.view((Long) obj);
+		// 글보기와 글수정도 사용을 한다. 글보기할때(list->view)는 조회수 1증가 해야되고 
+		// 글수정할때(update -> view)는 증가하지 않는다. 데이터를 2개 넘어오게 된다.(클래스, 배열(O))
+		// obj[0] - no // obj[1] - inc
+		Object[] objs = (Object[]) obj;
+		Long no = (Long) objs[0];
+		Long inc = (Long) objs[1];
+		
+		if((Long)objs[1] == 1) dao.increase(no);
+		return dao.view(no);
 	}
 
 }

@@ -19,7 +19,7 @@ public class DBSQL {
 	= " insert into board(no, title, content, writer) "
 	+ " values(board_seq.nextval, ?, ?, ?) ";
 	public static final String BOARD_UPDATE 
-	= " update board set title =?, content =?, writer =?, where no =? ";
+	= " update board set title =?, content =?, writer =? where no =? ";
 	public static final String BOARD_DELETE 
 	= " delete from board where no = ? ";
 	public static final String BOARD_INCREASE 
