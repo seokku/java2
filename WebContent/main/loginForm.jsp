@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 폼</title>
+
+  <!-- 부트스트랩 라이브러리 등록 - CDN 방식 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+</body>
+<div class="container">
+<h1>로그인 폼</h1>
+<!-- post방식으로 해야 url뒤에 남지않음 -->
+<form action="login.jsp" method="post"> 
+	<div class="form-group">
+		<label for="id">아이디</label>
+		<input name ="id" id="id" class="form-control" />
+	</div>
+	
+	<div class="form-group">
+		<label for="pw">비밀번호</label>
+		<input name ="pw" id="pw" type="password" class="form-control" />
+	</div>
+	<button>로그인</button>
+
+</form>
+</div>
+</html>
